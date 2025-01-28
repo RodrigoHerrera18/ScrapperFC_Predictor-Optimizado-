@@ -26,7 +26,7 @@ def main():
 
     for jugador in jugadores:
         print(f"Obteniendo estadísticas para {jugador}...")
-        estadisticas = extractor.obtener_estadisticas_jugador_optimizado8(jugador, league, season)
+        estadisticas = extractor.obtener_estadisticas_jugador_optimizado(jugador, league, season)
 
         if not estadisticas.empty:
             estadisticas_jugadores[jugador] = estadisticas
